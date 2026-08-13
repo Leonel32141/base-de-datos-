@@ -19,7 +19,6 @@ $stmt->bind_param("ss", $usuario_ingresado, $contrasena_hasheada);
 
 if ($stmt->execute()) {
     echo "¡Listo! El usuario se guardó correctamente.";
-    echo "<br><br>Andá a phpMyAdmin, mirá la tabla 'usuarios' y vas a ver la contraseña convertida en un texto inentendible.";
 } else {
     echo "Hubo un error: " . $conexion->error;
 }

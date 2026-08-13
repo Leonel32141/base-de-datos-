@@ -1,6 +1,6 @@
 <?php
 
-$conexion = new mysqli("127.0.0.1", "root", "", "phising");
+$conexion = new mysqli("127.0.0.1:3307", "root", "", "phising");
 
 if ($conexion->connect_error) {
     die("Error de conexión: " . $conexion->connect_error);
